@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: orange;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.custom-box {
+  max-width: 700px;
+  background-color: #ffffff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+.custom-box::before,
+.custom-box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.custom-box.hide {
+  display: none;
+}
+/* .info_box,
+.quiz-box,
+.result_box
+.user_panel {
+  opacity: 0;
+} */
+
+/* .start_btn,
+.info_box,
+.quiz_box,
+/* .user_panel, */
+.result_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+.home-box h3 {
+  font-size: 18px;
+  color: #009688;
+  font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+
+.home-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 400;
+}
+.info {
+  margin: 5px 0;
+  font-size: 17px;
+}
+.home-box .btn {
+  margin-top: 20px;
+  background-color: #009688;
+  color: #ffffff;
+}
+.btn {
+  padding: 15px 45px;
+  background-color: #009688;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+.exitQuiz {
+  margin-right: 10px;
+}
+
+.home-box p span {
+  font-weight: 500;
+  /* background-color: #009688; */
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn,
+.quiz-box .answer-indicator {
+  width: 100%;
+  float: left;
+}
+
+.quiz-box .question-number {
+  font-size: 18px;
+  color: #009688;
+  font-weight: 600;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
+.quiz-box .question-text {
+  font-size: 22px;
+  color: #000000;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.quiz-box .option-container .option {
+  background-color: #cccccc;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-box .option-container .option.already_answered {
+  pointer-events: none;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.quiz-box .option-container .option.correct::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  z-index: -1;
+  animation: slideInLeft 0.5s ease forwards;
+}
+@keyframes siideInleft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.quiz-box .option-container .option.wrong::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  z-index: -1;
+}
+.quiz-box .option-container .option.correct {
+  color: white;
+}
+.quiz-box .option-container .option.wrong {
+  color: white;
+}
+
+.quiz-box .btn {
+  margin: 16px 0;
+}
+.quiz-box .answer-indicator {
+  border-top: 1px solid #cccccc;
+}
+.start_button {
+  outline: none;
+}
+
+.user_panel .answer-indicator div {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-color: #cccccc;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.user_panel .answer-indicator div.correct {
+  background-color: green;
+  background-image: url("../Image/right.jpg");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user_panel .answer-indicator div.wrong {
+  background-color: red;
+  background-image: url("../Image/wrong.jpg");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* .info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+} */
+
+.quiz_box header .timer {
+  color: #004085;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+  height: 45px;
+  padding: 0 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 145px;
+}
+
+.quiz_box header .timer .time_left_txt {
+  font-weight: 400;
+  font-size: 17px;
+  user-select: none;
+}
+
+.quiz_box header .timer .timer_sec {
+  font-size: 18px;
+  font-weight: 500;
+  height: 30px;
+  width: 45px;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  background: #343a40;
+  border: 1px solid #343a40;
+  user-select: none;
+}
+
+.quiz_box header .time_line {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #007bff;
+}
+
+.ui-widget-header {
+  background: #cedc98;
+  border: 1px solid #dddddd;
+  color: #333333;
+  font-weight: bold;
+}
+.main_contain{
+    display: none;
+}
+
+#progressBar {
+    width: 90%;
+    margin: 10px auto;
+    height: 22px;
+    background-color: #0A5F44;
+  }
+  
+  #progressBar div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #CBEA00;
+    box-sizing: border-box;
+  }

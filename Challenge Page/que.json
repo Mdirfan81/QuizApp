@@ -1,0 +1,114 @@
+ [
+    {
+    "category": "Science: Mathematics",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How is the number 9 represented as a binary number?",
+    "correct_answer": "1001",
+    "option": [
+    "1000",
+    "1110",
+    "1010",
+    "1001"
+    ]
+    },
+    {
+    "category": "Science: Mathematics",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In Roman Numerals, what does XL equate to?",
+    "correct_answer": "40",
+    "option": [
+    "60",
+    "15",
+    "40",
+    "90"
+    ]
+    },
+    {
+    "category": "Science: Mathematics",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What&#039;s the square root of 49?",
+    "correct_answer": "7",
+    "option": [
+    "4",
+    "12",
+    "9",
+    "7"
+    ]
+    },
+    {
+    "category": "Science: Mathematics",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "A universal set, or a set that contains all sets, exists.",
+    "correct_answer": "False",
+    "option": [
+    "True",
+    "False"
+    ]
+    },
+    {
+    "category": "Science: Mathematics",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the symbol for Displacement?",
+    "correct_answer": "Deltar",
+    "option": [
+    "dr",
+    "Dp",
+    "Deltar",
+    "r"
+    ]
+    },
+    {
+    "category": "Science: Mathematics",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "The metric prefix &quot;atto-&quot; makes a measurement how much smaller than the base unit?",
+    "correct_answer": "One Quintillionth",
+    "option": [
+    "One Billionth",
+    "One Quadrillionth",
+    "One Quintillionth",
+    "One Septillionth"
+    ]
+    },
+    {
+    "category": "Science: Mathematics",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How many sides does a heptagon have?",
+    "correct_answer": "7",
+    "option": [
+    "8",
+    "6",
+    "7",
+    "5"
+    ]
+    },
+    {
+    "category": "Science: Mathematics",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "An isosceles triangle has two sides of equal length as opposed to three.",
+    "correct_answer": "True",
+    "option": [
+        "True",
+    "False"
+    ]
+    },
+    {
+    "category": "Science: Mathematics",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "A scalene triangle has two sides of equal length.",
+    "correct_answer": "False",
+    "option": [
+    "True",
+    "False"
+    ]
+    }
+    ]
+ 
